@@ -19,7 +19,8 @@ class Employee(models.Model):
     salary = models.IntegerField()
     contact_num = models.CharField(max_length=12, blank=False, unique=True)
     department = models.ForeignKey(Department, related_name='department', on_delete=models.CASCADE)
-    join_date = models.DateTimeField(auto_now_add = True)
+    join_date = models.DateTimeField(auto_now_add=True)
+    updated = models.DateTimeField(auto_now_add=True)
 
     def __str__(self):
         return self.emp_id
