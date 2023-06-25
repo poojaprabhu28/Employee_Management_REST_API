@@ -1,1 +1,1 @@
-# Repository for an Employee mnaagement system
+# Repository for an Employee Management System
